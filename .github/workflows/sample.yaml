@@ -10,10 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Print commit message
-        run: |
-          echo "Commit message:"
-          git log -1 --pretty=%B
+      - name: Print message
+        run: echo "New push detected on main branch"
