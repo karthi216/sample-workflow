@@ -3,7 +3,8 @@ name: Print Message
 on:
   push:
     branches:
-      - main
+      - 'master'      
+     #'**'   #run when you push on any branch
 
 jobs:
   print-message:
